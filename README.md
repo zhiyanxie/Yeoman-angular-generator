@@ -1,0 +1,1 @@
+# Yeoman-angular-generator
