@@ -1,0 +1,22 @@
+{
+  "name": "pressg-angular",
+  "version": "1.0.0",
+  "description": "Create sub-scaffolding for angularjs project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhiyanxie/Yeoman-angular-generator.git"
+  },
+  "keywords": [
+    "yeoman"
+  ],
+  "author": "Zhiyan (Peter)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhiyanxie/Yeoman-angular-generator/issues"
+  },
+  "homepage": "https://github.com/zhiyanxie/Yeoman-angular-generator#readme"
+}
