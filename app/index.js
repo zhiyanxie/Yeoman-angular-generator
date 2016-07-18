@@ -33,14 +33,6 @@ module.exports = generators.NamedBase.extend({
         );
 
         this.fs.copyTpl(
-            this.templatePath('_directive.js'),
-            this.destinationPath('src/components/' + fileNameFragment + '/' + fileNameFragment + '-directive.js'),
-            {
-                componentName: this.name,
-            }
-        );
-
-        this.fs.copyTpl(
             this.templatePath('_service.js'),
             this.destinationPath('src/components/' + fileNameFragment + '/' + fileNameFragment + '-service.js'),
             {
@@ -48,6 +40,13 @@ module.exports = generators.NamedBase.extend({
             }
         );
 
+        this.fs.copyTpl(
+            this.templatePath('_directive.js'),
+            this.destinationPath('src/components/' + fileNameFragment + '/' + fileNameFragment + '-directive.js'),
+            {
+                componentName: this.name,
+            }
+        );
         if (this.options.view) {
             this.fs.copyTpl(
                 this.templatePath('_index.html'),
