@@ -1,8 +1,8 @@
-# Yeoman-angular-generator
+# Yeoman-angular-generator [![Gitter](https://img.shields.io/badge/Gitter-Join_the_Yeoman_chat_%E2%86%92-00d06f.svg)](https://gitter.im/yeoman/yeoman)
 
 ## Purpose
-For consistancy of code style and best practice
-according to https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
+>For consistancy of code style and best practice
+>according to https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 
 
 ##Installation
