@@ -27,13 +27,13 @@ module.exports = generators.NamedBase.extend({
         if (this._args.length>1){
           var parent = '';
           var strArray = this.args[1].split('/');
-          for (var i=0 ; i<this._args.length ; i++){
+          for (var i=0 ; i<strArray.length ; i++){
             parent += getFileNameFragment(strArray[i]) + '/'
           }
         } else {
           var parent = '';
         }
-
+        console.log(parent);
         var fileNameFragment = getFileNameFragment(this.name);
 
         this.fs.copyTpl(
