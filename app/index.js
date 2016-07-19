@@ -51,7 +51,7 @@ module.exports = generators.NamedBase.extend({
                     }
                 ]
             }], function(answers){
-               this.log(answers);
+              //  this.log(answers);
                //this.ngappname = answers.ngappname;
                this.includeModule = _.includes(answers.jslibs, 'module.js');
                this.includeController = _.includes(answers.jslibs, 'controller.js');
@@ -80,7 +80,7 @@ module.exports = generators.NamedBase.extend({
         } else {
           var parent = '';
         }
-        
+
         var fileNameFragment = getFileNameFragment(this.name);
 
         if (this.includeModule){
