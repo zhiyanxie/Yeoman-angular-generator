@@ -23,9 +23,13 @@ module.exports = generators.NamedBase.extend({
     },
 
     writing: function(){
-        console.log(this. _args[1]);// get the second parameter as the path
+        // console.log(this. _args[1]);// get the second parameter as the path
         if (this._args.length>1){
-          var parent = getFileNameFragment(this._args[1]) + '/';
+          var parent = '';
+          var strArray = this.args[1].split('/');
+          for (var i=0 ; i<this._args.length ; i++){
+            parent += getFileNameFragment(strArray[i]) + '/'
+          }
         } else {
           var parent = '';
         }
@@ -63,6 +67,16 @@ module.exports = generators.NamedBase.extend({
                 componentName: this.name,
             }
         );
+
+        this.fs.copyTpl(
+            this.templatePath('_test.js'),
+            this.destinationPath('src/components/' + parent + fileNameFragment + '/' + fileNameFragment + '-test.js'),
+            {
+                componentName: this.name,
+                componentDashName: fileNameFragment
+            }
+        );
+
         if (this.options.view) {
             this.fs.copyTpl(
                 this.templatePath('_index.html'),
