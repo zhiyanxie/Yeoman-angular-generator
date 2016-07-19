@@ -20,7 +20,7 @@ npm install -g yo
 
 ##Usgae
 
-To Create Controller, Service, Directive, ...(**use CamelCase for the component name the generator will create dash-directory for you**)
+To Create Controller, Service, Directive, ...(**use CamelCase for the component name you want to use, the generator will create dash-directory for you**)
 
 
 Run the commond:
