@@ -13,7 +13,7 @@ https://nodejs.org/en/
 
 If you do not have yeoman install yet  run commond:
 ```
-npm install
+npm install generator-pressg --save-dev
 ```
 then
 ```
