@@ -10,7 +10,6 @@ module.exports = generators.NamedBase.extend({
       this.log(chalk.yellow.bold('Remember add dependencies to parent or current module, directive!'));
       //
     },
-
     prompting: function(){
             var done = this.async();
             this.prompt([
