@@ -1,6 +1,6 @@
 {
   "name": "generator-pressg",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Create sub-scaffolding for angularjs project",
   "main": "index.js",
   "scripts": {
