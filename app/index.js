@@ -61,6 +61,7 @@ module.exports = generators.NamedBase.extend({
                done();
             }.bind(this));
 
+
     },
 
     constructor: function () {
