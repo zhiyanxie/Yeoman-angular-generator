@@ -14,6 +14,7 @@
             controllerAs: 'vm',
             link: link,
             restrict: 'AE',
+            templateUrl: "<%= directiveUrl %>",
             scope: {
             }
         };
@@ -21,7 +22,7 @@
 
         function link(scope, element, attrs) {
         }
-    }
+    } 
 
     <%= componentName %>Directive.$inject = [];
 
