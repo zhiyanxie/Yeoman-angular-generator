@@ -121,7 +121,7 @@ module.exports = generators.NamedBase.extend({
               this.destinationPath('src/components/' + parent + fileNameFragment + '/' + fileNameFragment + '-directive.js'),
               {
                   componentName: this.name,
-                  directiveUrl: 'src/components/' + parent + fileNameFragment + '/' + fileNameFragment + this.name + 'Template.html'
+                  directiveUrl: 'src/components/' + parent + fileNameFragment + '/' + fileNameFragment + '.html'
               }
           );
         };
